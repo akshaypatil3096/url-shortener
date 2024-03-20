@@ -56,7 +56,7 @@ func ShortenerURL(c *gin.Context) {
 	val, _ := rd.Get(ctx, id).Result()
 	if val != "" {
 		c.IndentedJSON(http.StatusForbidden, map[string]any{
-			"error": "short url already exits",
+			"error": "short url already exits ",
 		})
 	}
 
